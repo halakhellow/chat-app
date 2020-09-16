@@ -36,6 +36,13 @@ h1 {
     color: #575ed8;
 }
 
+#feedback p {
+    color: #797979;
+    padding: 14px 0px;
+    margin: 0 20px;
+    font-size: 1.3rem;
+}
+
 label {
     box-sizing: border-box;
     display: block;

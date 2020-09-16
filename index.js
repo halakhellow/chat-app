@@ -7,4 +7,9 @@ app.use(express.static("public"));
 
 let socket = require("socket.io");
 let io = socket(server);
-io.on("connection", (socket) => {});
+
+io.on("connection", (socket) => {
+  socket.on("chat", (data) => {
+    io.sockets.emit("chat", data);
+  });
+});

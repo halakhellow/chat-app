@@ -15,3 +15,7 @@ btn.onclick = () => {
 socket.on("chat", (data) => {
   output.innerHTML += `<p> <span>${data.name}</span> : ${data.message} </p>`;
 });
+
+message.onkeypress = () => {
+  socket.emit("typing", name.value);
+};

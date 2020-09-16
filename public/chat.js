@@ -11,6 +11,7 @@ btn.onclick = () => {
     name: name.value,
     message: message.value,
   });
+  message.value = "";
 };
 
 socket.on("chat", (data) => {

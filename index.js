@@ -4,3 +4,7 @@ let app = express();
 let server = app.listen(4000, () => {});
 
 app.use(express.static("public"));
+
+let socket = require("socket.io");
+let io = socket(server);
+io.on("connection", (socket) => {});
